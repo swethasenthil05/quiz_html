@@ -1,5 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        background-image: url("https://marketplace.canva.com/EAFCO6pfthY/1/0/1600w/canva-blue-green-watercolor-linktree-background-F2CyNS5sQdM.jpg");
+    }
+    ul{
+       display: flex;
+       flex-direction: row;
+       list-style: none; 
+       float: right;   
+       position: absolute;
+       top: 5px;
+       right: 150px;
+    margin: 0;
+    }
+    
+    li{
+        padding: 20px;
+    }
+    .p1{
+        position: relative;
+        left: 50px;
+        top: 120px;
+        font-size: 50px;
+        color: gray;
+       text-shadow: 2px 2px pink;
+       
+    }
+    .p2{
+        position: relative;
+        top: 100px;
+        left: 60px;
+        font-size: 20px;
+        color: orange;
+    }
+    div{
+        position: relative;
+        top: 120px;
+        left: 60px;
+        width: 600px;
+        color: grey;
+    }
+    button:hover{
+        background-color: green ;
+    }
+    .login-button{
+        border: none;
+        border-radius: 26px;
+        
+    }
+    
+    
+    
+</style>
+</head>
+<body>
+    <h3 style="text-transform: uppercase; margin-left: 50px; font-family: papyrus;">
+        logo
+    </h3>
+    
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li class="login-button"><a href="login.html">login</a></li>
+    </ul>
+    <p class="p1">Web Design Websites</p>
+    <p class="p2">Building Digital Experiences your Audiences will Love</p2>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo labore error expedita tempore vero pariatur nemo magnam non iusto voluptas quaerat, debitis maiores mollitia eaque cupiditate sed placeat officia inventore.</div>
+    <form style=" position: relative; top: 150px; left: 60px;">
+        <input style="width: 300px; height: 25px; border-radius: 20px;" type="email" placeholder="Enter your Email Address">
+    </form>
+    <button style=" position: relative; top: 123px; left: 400px; height: 30px; width: 75px; border-radius: 50px; padding: 3px; background-color: blueviolet; box-shadow: 2px 2px;" >sign up</button>
+    
+    
+ <div class="container1">
+        <h1 style="text-align: center;" id="heading">Mcq questions</h1>
+        
+        <div class="div2">1.who wrote the play romeo and juliet</div>
+        <ul id="ul">
+        <li><input type="radio" name="q1" value="A">  Charles Dickens</li>  
+        <li><input type="radio" name="q1" value="B">  William Shakespeare</li>
+        <li><input type="radio" name="q1" value="C">  Leo Tolstoy</li>
+        <li><input type="radio" name="q1" value="D">  Mark Twain</li>
+    </ul>
+    <button onclick="submit()">next</button>
+    </div>
+    .div2{
+             font-size: 25px;
+             font-weight: bold;
+             margin: 70px;
+             text-align: center;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            position: absolute;
+            left: 200px;
+            top: 155px;
+        }
+        li{
+            padding: 5px;
+            font-size: 20px;
+        }
+        button{
+            height: 35px;
+            width: 65px;
+            position: absolute;
+            bottom: 40px;
+            right: 30px;
+            background-color: green;
+        }
+    
+</body>
+</html>
+ 
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -40,7 +163,6 @@
         }
         .li.options{
             font-weight: "Macondo", cursive;;
-            
         }
 
         #question-container {
@@ -48,7 +170,7 @@
             flex-direction: column;
             list-style: none;
             position: absolute;
-            left: 175px;
+            left: 180px;
             top: 110px;
             color: darkolivegreen;
 
@@ -79,9 +201,9 @@
 
         .btn.rea{
             position: absolute;
-            left: 175px;
+            left: 150px;
             width: 100px;
-            top: 130px;
+            top: 80px;
         }
 
         
@@ -92,7 +214,7 @@
             font-weight: bold;
              position: absolute;
             top: 140px;
-            left: 120px;
+            left: 130px;
         }
         /* #re-attempt{
             position: absolute;
@@ -105,11 +227,11 @@
         #message-div{
            position: absolute;
             top: 380px;
-            left: 400px;
+            left: 420px;
             color: red;
            
         }
-       
+        
        
 
         
@@ -135,16 +257,17 @@
         var questions = [
             { question: "1. what is the captital of france?", options: ["berlin", "madrid", "paris", "rome"], correct: "paris"},
             { question: "2. which planet is known as red planet?", options: ["earth", "mars", "jupiter", "venus"], correct: "mars"},
-            { question: "3. who wrote Hamlet?", options: ["Charles", "Williams", "Mark Twain", "Leo Tolstoy"], correct: "Williams"},
+            { question: "3. who wrote Hamlet?", options: ["Charles", "Williams", "Mark Twain", "Leo Tolstoy"], correct: "william"},
             {question:"4. what is the largest ocean on earth?",options: ["Indian","Atlantic","Pacific","Arctic"],correct:"Pacific"},
             {question:"5. what is the currency of japan?",options: ["Yen","Dollar","Euro","Won"],correct:"Yen"},
-            {question:"6. which organ specifies bloood in human body?",options: ["Heart","liver","Kidney","lungs"],correct:"Kidney"},
+            {question:"6. which organ specifies bloood in human body?",options: ["Heart","liver","Kidney","lungs"],correct:"kidney"},
             {question:"7. what is the hardest natural substance?",options: ["Gold","Iron","Diamond","Platinum"],correct:"Diamond"},
             {question:"8. who is known as father of computer?",options: ["Alan Turing","Charles Babbage","Bill Gates","Steve Jobs"],correct:"Charles Babbage"},
             {question:"9. which country known as land of raising sun?",options: ["China","Japan","Thailand","South Korea"],correct:"China"},
             {question:"10. which river is the longest in the world?",options: ["Amazon","Mississippi","Nile","Yangtze"],correct:"Nile"},
+
         ];
-        let currentIndex = 0;  
+        let currentIndex = 0;
         var answers = [];
         const questionContainer = document.getElementById('question-container');
         const nextBtn = document.getElementById('next-btn');
@@ -156,26 +279,6 @@
             getQuizFromAPI();
         });
 
-
-        // async function getQuizFromAPI() {
-        //     try {
-        //         const response = await fetch('http://127.0.0.1:8000/getQuiz', {
-        //                                             method: 'get',
-        //                                             headers: {
-        //                                                 'Accept': 'application/json',
-        //                                                 'Content-Type': 'application/json'
-        //                                             }
-        //                                         });
-        //         if (!response.ok) {
-        //         throw new Error(`HTTP error! status: ${response.status}`);
-        //         }
-        //         const data = await response.json();
-        //         console.log(data);
-        //     } catch (error) {
-        //         console.error('Error fetching data:', error);
-        //     }
-        //     }
-            
         function renderQuestion() {  
             const q = questions[currentIndex];
             const ans = answers[currentIndex];
@@ -184,7 +287,7 @@
                 if(ans === opt){
                     sel = "checked";
                 }
-                return `<li style="list-style-type:none; padding:4px; font-size: 20px; left: 120px"><label for="${opt}"><input type="radio" name="answer" id="${opt}" value="${opt}" ${sel}>${opt}</label></li>`;
+                return `<li style="list-style-type:none; padding:4px; font-size: 20px;"><label for="${opt}"><input type="radio" name="answer" id="${opt}" value="${opt}" ${sel}>${opt}</label></li>`;
                 
             }
             ).join('');
@@ -265,7 +368,6 @@
             let score = 0;
             questions.forEach((q, i) => {
                 if (answers[i] === q.correct) score++;
-                
 
             });
 
@@ -275,13 +377,7 @@
 
             resultDiv.style.display = 'block'; 
 
-            // resultDiv.textContent = `Result: You have scored ${score} out of ${questions.length}.`;
-
-             if (score === questions.length) {
-        resultDiv.innerHTML = `<p style="color: green; font-size: 28px; position: relative; right: 45px; text-align: center;">🎉 Congratulations! You scored a perfect ${score} out of ${questions.length}! 🎉</p>`;
-    } else {
-        resultDiv.textContent = `Result: You have scored ${score} out of ${questions.length}.`;
-    }
+            resultDiv.textContent = `Result: You have scored ${score} out of ${questions.length}.`;
             resultDiv.innerHTML += `
             <button id="re-attempt" class="btn rea" onclick="handleRetry()">Re-Attempt Quiz </button>`
 
@@ -308,7 +404,6 @@
                      success: function(data) {
                      // Update the content on success
                         questions = data;
-                        // console.log(questions);
                         renderQuestion();
                      },
                      error: function(error) { 
@@ -317,6 +412,22 @@
                      }
                  });
 
+                 return;
+
+        //     $.ajax({
+        //     url: "http://127.0.0.1:3000/getQuiz", // The URL to send the request to
+        //     method: "GET", // The HTTP method (GET, POST, etc.)
+        //     // dataType: "json", // The expected data type of the response
+        //     success: function(data) {
+        //         console.log("Data received:", data);
+        //         // Process the received data here
+        //     },
+        //     error: function(xhr, status, error) {
+        //         console.log(status);
+        //         console.error("AJAX error:", status, error);
+        //         // Handle errors here
+        //     }
+        //     });
          }
 
 
