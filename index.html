@@ -177,6 +177,7 @@
         //     }
             
         function renderQuestion() {  
+            debugger;
             const q = questions[currentIndex];
             const ans = answers[currentIndex];
             const opts = q.options.map(opt =>{
@@ -192,7 +193,7 @@
             
             questionContainer.innerHTML = `
             <div class="question-block">
-                <h2 >${q.question}</h2>
+                <h2 >${q.Id} ${q.question}</h2>
                 <ul class="options">${opts}</ul>
                 </div>`;
 
