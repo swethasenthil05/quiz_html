@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+   
+   <style>
+        .button {
+          background-color: #6d08ca;
+          color: white;
+          padding: 5px;
+          margin: 10px;
+        }
+
+        .button:hover {
+          background-color: gray;
+        }
+
+        .button:active {
+          background-color: blue;
+          color: white;
+        }
+        
+        /*
+          Class based Styles
+            i. elements (a/input/select/h1 etc.,)
+            ii. specify class name (.[any names without out space])
+            iii. not elements .
+        */
+        
+        table tr td label,table tr td input,table tr td select{
+          font-size: 17px !important;
+          font-family: Arial, Helvetica, sans-serif !important;
+        }
+
+        table tr td input,table tr td select{
+          border: 2px solid #6d08ca !important;
+          width: 250px !important;
+        }
+
+  </style>
+        
+    
+        
+
+  
+</head>
+<body>
+   
+    <div style="display: flex ; justify-content: center; align-items: center; height: 100vh; border-style: double;">
+       
+        <form class="login-container" style="border: 5px solid black">
+        <h2 style="text-align: center; text-decoration-color: red;">Login</h2>
+            
+            
+            <!-- <select style="font-size: 25px; position: relative; top: -85px;">
+                <option>html</option>
+                <option>css</option>
+                <option>java</option> -->
+            <!-- </select><br>
+            <label for="username" style="font-size: 40px; row-gap: 30px; position: relative; top: -85px;">username:</label>
+            <input id="username" type="text" style="width: 300px; height: 40px; font-size: 16px; position: relative; top: -85px;"></br>
+            <label for="password" style="font-size: 40px; row-gap: 30px; position: relative; top: -85px;">password:</label>
+            <input type="text" style="width: 300px; height: 40px; font-size: 16px; position: relative; top: -85px;" placeholder="Enter password"></br>
+            <label for="config" style="font-size: 40px; row-gap: 30px; position: relative; top: -85px;">config:</label>
+            <input type="text" style="width: 300px; height: 40px; font-size: 16px; position: relative; top: -85px;"></br>
+            <label for="Remote username" style="font-size: 40px; row-gap: 30px; position: relative; top: -85px;">Remote username:</label>
+            <input type="text" style="width: 300px; height: 40px; font-size: 16px; position: relative; top: -85px;"></br>
+            <label for="Remote password" style="font-size: 40px; row-gap: 30px; position: relative; top: -85px;">Remote password:</label>
+            <input type="text" style="width: 300px; height: 40px; font-size: 16px; position: relative; top: -85px;" placeholder="Enter password"></br> -->
+            
+            <table style="padding-top: 40px;">
+              <tr>
+                <td>
+                  <label for="Product" style="font-size: 40px; ">Product:</label>
+                </td>
+                <td>
+                  <select style="width: 300px; height: 40px; font-size: 16px; border-color: red; ">
+                    <option>html</option>
+                    <option>css</option>
+                    <option>java</option>
+                </select>
+                 
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="Username" style="font-size: 40px;">Username:</label>
+                </td>
+                <td>
+                  <input type="text" style="width: 300px; height: 40px; font-size: 16px; border-color: red;">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="Password" style="font-size: 40px;">Password:</label>
+                </td>
+                <td>
+                  <input type="text" placeholder="Enter your password" style="width: 300px; height: 40px; font-size: 16px; border-color: red;">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="Config" style="font-size: 40px;">Config:</label>
+                </td>
+                <td>
+                  <input type="text" style="width: 300px; height: 40px; font-size: 16px; border-color: red;">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="Remote username" style="font-size: 40px;">Remote Username:</label>
+                </td>
+                <td>
+                  <input type="text" style="width: 300px; height: 40px; font-size: 16px; border-color: red; ">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="Remote Password" style="font-size: 40px;">Remote Password:</label>
+                </td>
+                <td>
+                  <input type="text" placeholder="Enter your password" style="width: 300px; height: 40px; font-size: 16px; border-color: red; ">
+                </td>
+              </tr>
+            </table>
+            
+           <div style="text-align: center;margin: 10px;">
+              <a class="button" >Submit</a>
+            </div>
+            
+        </form>
+        
+    </div>
+    
+</body>
+</html>

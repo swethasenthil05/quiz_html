@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div_container{
+             
+            height: 240px;
+            width: 600px;
+             position: absolute;
+          border: solid 1px;
+           border-radius: 20px;
+             top: 70px;
+             left: 400px;
+              border-left: solid 10px gainsboro;
+            border-top: solid 10px gainsboro;
+             border-right: solid 10px gainsboro;
+              border-bottom: solid 10px gainsboro;
+        }
+        .button{
+               position: absolute;
+             left:150px;
+              
+              }
+              #submit{
+                background-color: green;
+                color: white;
+                height: 25px;
+                border: 10px;
+              }
+              #input-value{
+                height: 20px;
+                border-radius: 20px;
+                font-family: ;
+              }
+              #image-container{
+                height: 35px;
+
+              }
+    </style>
+</head>
+<body>
+    <div id="main container">
+        <div id="div_container">
+            <h1 style="text-align: center; color: green;">GreeksForGreeks</h1>
+            <h3 style="text-align: center; color: green;">AI image generator using Javaascript</h3>
+            <h4 style="text-align: center; color: green;">Enter the text in the below input bar and</br> get the AI generated image related to ths text</h4>
+             <div id="generate-image-form">
+            <form class="button">
+            <input type="text" placeholder="Enter some text..." id="input-value">
+            <button onclick="image()" id="image-generate-button">generate image</button>
+           </form>
+           </div>
+           
+            <div id="image-visible">
+                <p id="image-Container-Text"></p>
+               <img id="generated-image"   src='' alt="AI Generated Image">
+                     
+                   
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let generateImageForm=document.getElementById("generate-image-form");
+        let inputTextContent=document.getElementById("input-value");
+        let imageContainer=document.getElementById("image-visible");
+        let imageContainerText=document.getElementById("image-Container-Text");
+        let generatedImage=document.getElementById("generated-image");
+    </script>
+</body>
+</html>
+
+
+
+function updateButtons() {
+  document.querySelector('button[onclick="prevQuestion()"]').disabled = currentQuestion === 0;
+  document.querySelector('button[onclick="nextQuestion()"]').disabled = currentQuestion === questions.length - 1;
+}
+
+function nextQuestion() {
+  if (currentQuestion < questions.length - 1) {
+    currentQuestion++;
+    showQuestion(currentQuestion);
+    updateButtons();
+  }
+}
+
+function prevQuestion() {
+  if (currentQuestion > 0) {
+    currentQuestion--;
+    showQuestion(currentQuestion);
+    updateButtons();
+  }
+}
+
+// Initialize
+updateButtons();
