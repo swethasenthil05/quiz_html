@@ -133,16 +133,16 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         var questions = [
-            { question: "1. what is the captital of france?", options: ["berlin", "madrid", "paris", "rome"], correct: "paris"},
-            { question: "2. which planet is known as red planet?", options: ["earth", "mars", "jupiter", "venus"], correct: "mars"},
-            { question: "3. who wrote Hamlet?", options: ["Charles", "Williams", "Mark Twain", "Leo Tolstoy"], correct: "Williams"},
-            {question:"4. what is the largest ocean on earth?",options: ["Indian","Atlantic","Pacific","Arctic"],correct:"Pacific"},
-            {question:"5. what is the currency of japan?",options: ["Yen","Dollar","Euro","Won"],correct:"Yen"},
-            {question:"6. which organ specifies bloood in human body?",options: ["Heart","liver","Kidney","lungs"],correct:"Kidney"},
-            {question:"7. what is the hardest natural substance?",options: ["Gold","Iron","Diamond","Platinum"],correct:"Diamond"},
-            {question:"8. who is known as father of computer?",options: ["Alan Turing","Charles Babbage","Bill Gates","Steve Jobs"],correct:"Charles Babbage"},
-            {question:"9. which country known as land of raising sun?",options: ["China","Japan","Thailand","South Korea"],correct:"China"},
-            {question:"10. which river is the longest in the world?",options: ["Amazon","Mississippi","Nile","Yangtze"],correct:"Nile"},
+            { Id: "1", question: "what is the captital of france?", options: ["berlin", "madrid", "paris", "rome"], correct: "paris"},
+            {  Id: "2", question: "which planet is known as red planet?", options: ["earth", "mars", "jupiter", "venus"], correct: "mars"},
+            {  Id: "3", question: "who wrote Hamlet?", options: ["Charles", "Williams", "Mark Twain", "Leo Tolstoy"], correct: "Williams"},
+            {  Id: "4",question:"what is the largest ocean on earth?",options: ["Indian","Atlantic","Pacific","Arctic"],correct:"Pacific"},
+            { Id: "5",question:"what is the currency of japan?",options: ["Yen","Dollar","Euro","Won"],correct:"Yen"},
+            { Id: "6",question:"which organ specifies bloood in human body?",options: ["Heart","liver","Kidney","lungs"],correct:"Kidney"},
+            { Id: "7",question:"what is the hardest natural substance?",options: ["Gold","Iron","Diamond","Platinum"],correct:"Diamond"},
+            { Id: "8",question:"who is known as father of computer?",options: ["Alan Turing","Charles Babbage","Bill Gates","Steve Jobs"],correct:"Charles Babbage"},
+            { Id: "9", question:"which country known as land of raising sun?",options: ["China","Japan","Thailand","South Korea"],correct:"China"},
+            { Id: "10",question:"which river is the longest in the world?",options: ["Amazon","Mississippi","Nile","Yangtze"],correct:"Nile"},
         ];
         let currentIndex = 0;  
         var answers = [];
@@ -193,7 +193,7 @@
             
             questionContainer.innerHTML = `
             <div class="question-block">
-                <h2 >${Id}. ${q.question}</h2>
+                <h2 >${q.Id}. ${q.question}</h2>
                 <ul class="options">${opts}</ul>
                 </div>`;
 
